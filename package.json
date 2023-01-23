@@ -15,9 +15,6 @@
     ],
     "author": "Rishikesh Kale",
     "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/Zondax/filecoin-solidity/issues"
-    },
     "homepage": "https://github.com/rk-rishikesh/DataDAO#readme",
     "files": [
         "contracts"
