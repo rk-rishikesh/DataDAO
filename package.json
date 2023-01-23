@@ -1,15 +1,11 @@
 {
-    "name": "@zondax/filecoin-solidity",
+    "name": "Data DAO",
     "version": "0.0.0",
-    "description": "Filecoin EVM Solidity APIs",
-    "main": "",
-    "directories": {
-        "doc": "docs"
-    },
+    "description": "Data DAO Contract",
     "scripts": {},
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Zondax/filecoin-solidity.git"
+        "url": "git+https://github.com/rk-rishikesh/DataDAO"
     },
     "keywords": [
         "FEVM",
@@ -17,12 +13,12 @@
         "Solidity",
         "Filecoin"
     ],
-    "author": "Zondax AG <hello@zondax.ch>",
+    "author": "Rishikesh Kale",
     "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/Zondax/filecoin-solidity/issues"
     },
-    "homepage": "https://github.com/Zondax/filecoin-solidity#readme",
+    "homepage": "https://github.com/rk-rishikesh/DataDAO#readme",
     "files": [
         "contracts"
     ],
