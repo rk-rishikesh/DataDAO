@@ -16,7 +16,7 @@ module.exports = {
         hyperspace: {
             chainId: 3141,
             url: " https://wss.hyperspace.node.glif.io/apigw/lotus/rpc/v1",
-            accounts: ["5947a528453c1760df54805118dcb0ad2aeda12305c4c1b80a3a445eb4dc74f7"],
+            accounts: [PRIVATE_KEY],
         },
     },
     paths: {

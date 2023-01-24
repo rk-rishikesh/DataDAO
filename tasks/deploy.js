@@ -3,7 +3,7 @@ const { task, types } = require("hardhat/config")
 const ethers = require("ethers")
 const util = require("util")
 const request = util.promisify(require("request"))
-const DEPLOYER_PRIVATE_KEY = "032c6bdae6cc5408b0362b1eac35bf2f373bda66f005d15fa20bdc412e41b1c8"
+const DEPLOYER_PRIVATE_KEY = network.config.accounts[0];
 
 task("deploy:membershipnft", "Deploy Membership NFT Contract")
     .addOptionalParam("logs", "Print the logs", true, types.boolean)
