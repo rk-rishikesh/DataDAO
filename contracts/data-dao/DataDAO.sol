@@ -79,18 +79,18 @@ contract DataDAO is IDataDAO, DataDAOCore, AccessControl {
         return clientRet.client;
     }
 
-    /// @dev Approves or Rejects the proposal - This would enable to govern the data that is stored by the DAO 
+    /// @dev Checks if the provider is already storing the CID
     /// @param _cidraw: cid of the proposal
-    /// @param _provider: decision of the DAO on the proposal
+    /// @param _provider: provider credential
     function policyOK(bytes memory _cidraw, uint64 _provider) internal view returns (bool) {
         bool alreadyStoring = cidProviders[_cidraw][_provider];
         return !alreadyStoring;
     }
 
     /// @dev Checks if the Deal is valid 
-    /// @param _cidraw: Id of the cred.
-    /// @param _provider: Depth of the tree.
-    /// @param _size: Zero value of the tree.
+    /// @param _cidraw: cid of the proposal
+    /// @param _provider: provider credential
+    /// @param _size: size of the cred
     function authorizeDealData(bytes memory _cidraw, uint64 _provider, uint _size) internal {
         // Check if the deal proposal was passsed
         require(deals[_cidraw].dealState == DealState.Passed);
