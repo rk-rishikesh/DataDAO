@@ -36,6 +36,14 @@ The DataDAO contract is build with a vision that, the developers can create thei
 
 ## Functionality and possible customization
 
+The deal is tracked by the following deal states
+
+    - Proposed
+    - Passed 
+    - Rejected   
+    - Active        
+    - Expired
+    
 > Add a user
 
 This function assigns the role to the user that is being added to the DAO, the rules to and right to add the user can be customized in the implementation contract
