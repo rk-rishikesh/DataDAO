@@ -102,8 +102,6 @@ task("deploy", "Deploy DataDAOExample contract")
     
             await dataDAOExampleContract.deployed()
 
-            console.log("Abe jaldi deploy ho kal subhe Panvel nikalna hai")
-
             if (logs) {
                 console.info(`DataDAOExample contract has been deployed to: ${dataDAOExampleContract.address}`)
             }
