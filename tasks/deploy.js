@@ -1,9 +1,11 @@
-
 const { task, types } = require("hardhat/config")
 const ethers = require("ethers")
 const util = require("util")
 const request = util.promisify(require("request"))
-const DEPLOYER_PRIVATE_KEY = network.config.accounts[0];
+
+require("dotenv").config()
+
+const DEPLOYER_PRIVATE_KEY = process.env.PRIVATE_KEY
 
 task("deploy:membershipnft", "Deploy Membership NFT Contract")
     .addOptionalParam("logs", "Print the logs", true, types.boolean)
@@ -15,7 +17,7 @@ task("deploy:membershipnft", "Deploy Membership NFT Contract")
         async function callRpc(method, params) {
             var options = {
               method: "POST",
-              url: " https://wss.hyperspace.node.glif.io/apigw/lotus/rpc/v1",
+              url: "https://api.hyperspace.node.glif.io/rpc/v1",
               headers: {
                 "Content-Type": "application/json",
               },
@@ -68,7 +70,7 @@ task("deploy", "Deploy DataDAOExample contract")
         async function callRpc(method, params) {
             var options = {
               method: "POST",
-              url: " https://wss.hyperspace.node.glif.io/apigw/lotus/rpc/v1",
+              url: "https://api.hyperspace.node.glif.io/rpc/v1",
               headers: {
                 "Content-Type": "application/json",
               },

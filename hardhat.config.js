@@ -7,6 +7,9 @@ require("./tasks/1_create-deal")
 require("./tasks/2_approve-deal")
 require("./tasks/3_activate-deal")
 require("./tasks/4_collect-reward")
+require("dotenv").config()
+
+const PRIVATE_KEY = process.env.PRIVATE_KEY
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -15,7 +18,7 @@ module.exports = {
     networks: {
         hyperspace: {
             chainId: 3141,
-            url: " https://wss.hyperspace.node.glif.io/apigw/lotus/rpc/v1",
+            url: "https://api.hyperspace.node.glif.io/rpc/v1",
             accounts: [PRIVATE_KEY],
         },
     },

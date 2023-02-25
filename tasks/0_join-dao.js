@@ -20,7 +20,7 @@ task("join-dao", "Join the Data DAO as a member")
         async function callRpc(method, params) {
             var options = {
               method: "POST",
-              url: "https://wss.hyperspace.node.glif.io/apigw/lotus/rpc/v1",
+              url: "https://api.hyperspace.node.glif.io/rpc/v1",
               headers: {
                 "Content-Type": "application/json",
               },

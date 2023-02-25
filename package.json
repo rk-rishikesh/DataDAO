@@ -27,10 +27,11 @@
         "prettier-plugin-solidity": "^1.0.0"
     },
     "dependencies": {
-        "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+        "@nomicfoundation/hardhat-toolbox": "^1.0.2",
         "@openzeppelin/contracts": "^4.8.0",
         "@zondax/solidity-bignumber": "^0.1.0",
         "cids": "^0.7.5",
+        "dotenv": "^16.0.3",
         "hardhat-deploy": "^0.11.22",
         "hardhat-deploy-ethers": "^0.3.0-beta.13",
         "solidity-cborutils": "^2.0.0"

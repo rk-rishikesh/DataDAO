@@ -22,7 +22,7 @@ task("activate-deal", "Activate a Deal Proposal")
         async function callRpc(method, params) {
             var options = {
               method: "POST",
-              url: "https://wss.hyperspace.node.glif.io/apigw/lotus/rpc/v1",
+              url: "https://api.hyperspace.node.glif.io/rpc/v1",
               headers: {
                 "Content-Type": "application/json",
               },
