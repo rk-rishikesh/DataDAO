@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import "./DataDAO.sol";
 import "../openzeppelin/contracts/token/ERC721/IERC721.sol";
 
-contract DataDAOExample is DataDAO {
+contract P2PReviewDAO is DataDAO {
 
     IERC721 public membershipNFT;
 
